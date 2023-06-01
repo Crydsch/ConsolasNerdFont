@@ -24,3 +24,12 @@ sudo fc-cache -v
 # get font name & style
 sudo fc-list | grep -i "nf"
 ```
+
+
+# Crydsch instructions
+
+1. Download nerd fonts patcher + install dependencies
+2. Run `fontforge -script font-patcher CONSOLA.TTF --fontawesome --fontawesomeextension --fontlinux --octicons --powersymbols --pomicons --powerline --powerlineextra --mdi --weathericons --progressbars`
+3. Rename file and copy to ~/.fonts
+4. Run `fc-cache -v` and check new font in ~/.fonts is detected
+5. Run `sudo fc-list | grep -i "Consola"` to get font name and style
